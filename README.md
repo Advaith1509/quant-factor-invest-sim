@@ -78,7 +78,7 @@ For a complete walkthrough of:
 - **Sentiment integration using NLP**
 - Graphs, visualizations, and dashboards
 
-Please refer to the attached [`project_report.pdf`](./docs/project_report.pdf)
+Please refer to the attached [`project_report.pdf`](project_report.pdf)
 
 ---
 
