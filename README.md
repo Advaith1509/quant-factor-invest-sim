@@ -84,12 +84,12 @@ Please refer to the attached [`project_report.pdf`](./docs/project_report.pdf)
 
 ## 🛠️ ***Tech Stack***
 - Python 3.10+
-- Pandas, NumPy, Scikit-learn 
-- Matplotlib, Seaborn, Plotly
+- Pandas, NumPy, Scikit-learn (data preprocessing, ML model)
+- Random Forest Regressor (ML model) 
+- Matplotlib, Seaborn, Plotly (visualisations)
 - Streamlit (dashboard)
 - PostgreSQL (data backend)
 - SQLAlchemy / psycopg2 (DB connector)
-- Random Forest Regressor (ML model)
 - Hugging Face Transformers (FinBERT) (for sentiment analysis)
 
 ---
