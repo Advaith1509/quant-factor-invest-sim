@@ -15,7 +15,7 @@ This project implements a **Quantitative Factor Investing** framework using mult
 - Backtesting and performance comparison of ML-based portfolio and Rule-based portfolio vs S&P 500
 - Visualization through a live dashboard 
 
-> **Result**: The constructed portfolio **outperformed the S&P 500 Index** consistently across backtesting periods, with higher cumulative returns and a better risk-adjusted profile (Sharpe ratio). The results are displayed in the report.
+> **Result**: The constructed portfolio ***outperformed the S&P 500 Index*** consistently across backtesting periods, with higher cumulative returns and a better risk-adjusted profile (Sharpe ratio). The results are displayed in the report.
 
 ---
 
