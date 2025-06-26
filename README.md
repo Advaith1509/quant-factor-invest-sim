@@ -69,13 +69,13 @@ For a complete walkthrough of:
 - Portfolio logic and weighting strategies
 - Graphs, visualizations, and dashboards
 
-👉 Please refer to the attached [`project_report.pdf`](./docs/project_report.pdf)
+Please refer to the attached [`project_report.pdf`](./docs/project_report.pdf)
 
 ---
 
 ## 🛠️ ***Tech Stack***
 	•	Python 3.10+
-	•	Pandas, NumPy, Scikit-learn
+	•	Pandas, NumPy, Scikit-learn 
 	•	Matplotlib, Seaborn, Plotly
 	•	Streamlit (dashboard)
 	•	PostgreSQL (data backend)
@@ -85,16 +85,16 @@ For a complete walkthrough of:
 ---
 ## ⚙️ ***How to Run***
 
-1. Clone the repo
+1. Clone the repo -
 `git clone https://github.com/Advaith1509/quant-factor-simulator.git
 cd quant-factor-simulator`
 
-2. Install dependencies
+2. Install dependencies -
 `pip install -r requirements.txt`
 
-3. Set up .env with DB credentials
+3. Set up .env with DB credentials.
    
-4. Run Streamlit App
+4. Run Streamlit App -
 `streamlit run app/app.py`
 
 ---
