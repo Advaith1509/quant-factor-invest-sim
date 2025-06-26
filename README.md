@@ -1,19 +1,20 @@
 # 📈 ***QuantSim: A Quantitative Factor Investing Simulator***
 
-A comprehensive simulator for multi-factor stock investing that leverages fundamental data, machine learning, and portfolio optimization to construct and evaluate outperforming strategies - complete with an interactive dashboard.
+A comprehensive simulator for multi-factor stock investing that leverages fundamental data, machine learning, NLP-based sentiment analysis, and portfolio optimization to construct and evaluate outperforming strategies, complete with an interactive dashboard.
 
 ---
 
 ## 🚀 ***Overview***
 
-This project implements a **Quantitative Factor Investing** framework using multiple factor models (Value, Momentum, Quality, Volume, Volatility). It enables:
+This project implements a **Quantitative Factor Investing** framework using multiple factor models (Value, Momentum, Quality, Volume, Volatility) and Natural Language Processing (NLP)-based sentiment signals (when live data values are integrated into it). It enables:
 - Clean data ingestion from raw financial datasets
-- Computation of factor scores using both existing rules and an ML model.
-- Construction of a composite score using custom weights
+- Computation of factor scores using both existing rules and an ML model
+- Sentiment scoring using FinBERT to enhance decision-making with real-world financial sentiment
+- Construction of a composite score using custom weights (including sentiment)
 - Stock ranking and portfolio creation (equal-weighted and risk-adjusted)
 - Machine learning-based return prediction
 - Backtesting and performance comparison of ML-based portfolio and Rule-based portfolio vs S&P 500
-- Visualization through a live dashboard 
+- Visualization through a live dashboard
 
 > **Result**: The constructed portfolio ***outperformed the S&P 500 Index*** consistently across backtesting periods, with higher cumulative returns and a better risk-adjusted profile (Sharpe ratio). The results are displayed in the report.
 
@@ -23,7 +24,11 @@ This project implements a **Quantitative Factor Investing** framework using mult
 
 - ***Data Loader***: Load & clean price, fundamental, and security datasets
 - ***Factor Scoring***: Value, Momentum, Quality, Volume, Volatility
-- ***Composite Score***: Custom weighted average of individual factor scores
+- ***Sentiment Analysis***:
+  - Financial news headlines scored using **FinBERT** (Hugging Face)
+  - Sentiment factor computed as `positive-negative` sentiment
+  - Aggregated by date and symbol for integration into the factor model
+- ***Composite Score***: Custom weighted average of individual factor scores, now including NLP sentiment
 - ***ML Model***: Predictive modeling of stock returns (RandomForest Regressor)
 - ***Portfolio Construction:***
   - Top-50 stocks selected based on composite/ML predicted scores
@@ -56,7 +61,7 @@ This project implements a **Quantitative Factor Investing** framework using mult
 | Sharpe Ratio            | 1.385                     | 0.86          |
 | Max Drawdown            | -32.07%                   | -13.4%        |
 
-> Outperformance is driven by factor-based filtering, ML-enhanced ranking, and dynamic weighting in both portfolios when compared to the S&P 500 index over that period.
+> Outperformance is driven by factor-based filtering, ML-enhanced ranking, **sentiment-aware signal integration**, and dynamic weighting in both portfolios when compared to the S&P 500 index over that period.
 
 ---
 
@@ -67,6 +72,7 @@ For a complete walkthrough of:
 - Feature engineering and factor design
 - ML modeling decisions
 - Portfolio logic and weighting strategies
+- **Sentiment integration using NLP**
 - Graphs, visualizations, and dashboards
 
 Please refer to the attached [`project_report.pdf`](./docs/project_report.pdf)
@@ -74,13 +80,14 @@ Please refer to the attached [`project_report.pdf`](./docs/project_report.pdf)
 ---
 
 ## 🛠️ ***Tech Stack***
-	•	Python 3.10+
-	•	Pandas, NumPy, Scikit-learn 
-	•	Matplotlib, Seaborn, Plotly
-	•	Streamlit (dashboard)
-	•	PostgreSQL (data backend)
-	•	SQLAlchemy / psycopg2 (DB connector)
-	•	Random Forest Regressor (ML model)
+- Python 3.10+
+- Pandas, NumPy, Scikit-learn 
+- Matplotlib, Seaborn, Plotly
+- Streamlit (dashboard)
+- PostgreSQL (data backend)
+- SQLAlchemy / psycopg2 (DB connector)
+- Random Forest Regressor (ML model)
+- Hugging Face Transformers (FinBERT) (for sentiment analysis)
 
 ---
 ## ⚙️ ***How to Run***
