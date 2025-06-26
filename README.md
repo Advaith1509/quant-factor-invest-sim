@@ -1,4 +1,4 @@
-# 📈 ***Quantitative Factor Investing Simulator***
+# 📈 ***QuantSim: A Quantitative Factor Investing Simulator***
 
 A comprehensive simulator for multi-factor stock investing that leverages fundamental data, machine learning, and portfolio optimization to construct and evaluate outperforming strategies - complete with an interactive dashboard.
 
