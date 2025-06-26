@@ -98,7 +98,7 @@ Please refer to the attached [`project_report.pdf`](project_report.pdf)
 
 Due to the large size of the dataset and intermediate outputs, all relevant files have been uploaded to Google Drive.
 
-📁 **Access the dataset here**: [Google Drive Dataset Folder]([https://drive.google.com/your-link-here](https://drive.google.com/drive/folders/1dYgGPBbIwWZS2khuKKa-NuUfJV43rHnU?usp=sharing))
+📁 **Access the dataset here**: [Google Drive Dataset Folder](https://drive.google.com/your-link-here](https://drive.google.com/drive/folders/1dYgGPBbIwWZS2khuKKa-NuUfJV43rHnU?usp=sharing))
 
 The folder includes:
 - Raw financial datasets (`data/raw/`)
