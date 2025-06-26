@@ -22,14 +22,18 @@ This project implements a **Quantitative Factor Investing** framework using mult
 
 ## 🧩 ***Features***
 
-- ***Data Loader***: Load & clean price, fundamental, and security datasets
-- ***Factor Scoring***: Value, Momentum, Quality, Volume, Volatility
+- ***Data Loader***:
+  - Load & clean price, fundamental, price-split-adjusted and security datasets
+- ***Factor Scoring***:
+  - Value, Momentum, Quality, Volume, Volatility
 - ***Sentiment Analysis***:
-  - Financial news headlines scored using **FinBERT** (Hugging Face)
+  - Financial news headlines scored using *FinBERT* (Hugging Face)
   - Sentiment factor computed as `positive-negative` sentiment
   - Aggregated by date and symbol for integration into the factor model
-- ***Composite Score***: Custom weighted average of individual factor scores, now including NLP sentiment
-- ***ML Model***: Predictive modeling of stock returns (RandomForest Regressor)
+- ***Composite Score***:
+  - Custom weighted average of individual factor scores, including NLP sentiment scores for future use
+- ***ML Model***:
+  - Predictive modeling of stock returns (RandomForest Regressor)
 - ***Portfolio Construction:***
   - Top-50 stocks selected based on composite/ML predicted scores
   - Equal weighting & volatility-adjusted weighting strategies
@@ -38,7 +42,7 @@ This project implements a **Quantitative Factor Investing** framework using mult
   - S&P 500 benchmark comparison
   - Sharpe, volatility, drawdown metrics
 - ***Streamlit Dashboard:***
-  - Interactive filters, stock tables, and charts for visualizationss
+  - Interactive filters, stock tables, and charts for visualization
 
 ---
 
