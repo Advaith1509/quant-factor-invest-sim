@@ -38,8 +38,7 @@ This project implements a **Quantitative Factor Investing** framework using mult
   - S&P 500 benchmark comparison
   - Sharpe, volatility, drawdown metrics
 - ***Streamlit Dashboard:***
-  - Interactive filters, stock tables, and charts for visualizations
-  - Dark theme, responsive layout
+  - Interactive filters, stock tables, and charts for visualizationss
 
 ---
 
