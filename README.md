@@ -93,6 +93,26 @@ Please refer to the attached [`project_report.pdf`](project_report.pdf)
 - Hugging Face Transformers (FinBERT) (for sentiment analysis)
 
 ---
+
+## 🗂️ ***Data Access***
+
+Due to the large size of the dataset and intermediate outputs, all relevant files have been uploaded to Google Drive.
+
+📁 **Access the dataset here**: [Google Drive Dataset Folder](https://drive.google.com/your-link-here)
+
+The folder includes:
+- Raw financial datasets (`data/raw/`)
+- Processed features and cleaned datasets (`data/processed/`)
+- Factor score files (value, momentum, quality, etc.)
+- Sentiment analysis outputs (if applicable)
+
+To set up locally:
+1. Download the relevant folders from the Drive.
+2. Place them into the corresponding locations (in the image uploaded) within the project directory given in the Google Drive folder.
+
+> **Important**: You must download and correctly place the datasets before running notebooks or the dashboard app.
+
+---
 ## ⚙️ ***How to Run***
 
 1. Clone the repo -
