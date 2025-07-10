@@ -1,5 +1,17 @@
 # 📈 ***QuantSim - A Quantitative Factor Investing Simulator***
 
+[![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Streamlit](https://img.shields.io/badge/Built%20With-Streamlit-orange)](https://streamlit.io/)
+[![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-%23336791?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![FinBERT](https://img.shields.io/badge/NLP-FinBERT-%23FF9900?logo=huggingface&logoColor=white)](https://huggingface.co/ProsusAI/finbert)
+[![Scikit-learn](https://img.shields.io/badge/ML-Scikit--learn-%23f7931e?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![Pandas](https://img.shields.io/badge/Data-Pandas-%23150458?logo=pandas)](https://pandas.pydata.org/)
+[![NumPy](https://img.shields.io/badge/Data-NumPy-%23013243?logo=numpy)](https://numpy.org/)
+[![Matplotlib](https://img.shields.io/badge/Plotting-Matplotlib-%230073b3?logo=matplotlib&logoColor=white)](https://matplotlib.org/)
+[![Seaborn](https://img.shields.io/badge/Stats%20Viz-Seaborn-%2300a7b5)](https://seaborn.pydata.org/)
+[![SQLAlchemy](https://img.shields.io/badge/ORM-SQLAlchemy-%23d71a1a)](https://www.sqlalchemy.org/)
+
 A comprehensive simulator for multi-factor stock investing that leverages fundamental data, machine learning, NLP-based sentiment analysis, and portfolio optimization to construct and evaluate outperforming strategies, complete with an interactive dashboard.
 
 ---
@@ -65,6 +77,11 @@ This project implements a **Quantitative Factor Investing** framework using mult
 | Max Drawdown            | -32.07%                   | -13.4%        |
 
 > Outperformance is driven by factor-based filtering, ML-enhanced ranking, **sentiment-aware signal integration**, and dynamic weighting in both portfolios when compared to the S&P 500 index over that period.
+
+> ⚠️ *Note*: Returns above are pre-costs. After accounting for transaction costs, slippage, and portfolio turnover (~7% annually), estimated **net annualized returns** are:
+> - Rule-Based Portfolio: **~12.2%**
+> - ML-Based Portfolio: **~21.9%**
+> Both portfolios still outperform the S&P 500 after adjusting for realistic market frictions.
 
 ---
 
